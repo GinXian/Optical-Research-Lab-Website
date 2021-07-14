@@ -1,0 +1,174 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    width: calc(100% - 12rem);
+    margin: 0 6rem 0 6rem;
+}
+
+
+header {
+    top: 0;
+    /* padding: 0 2em; */
+    margin-bottom: 2em;
+    position: sticky;
+    /* background-color: rgba(255, 255, 255, .9); */
+    background-color: #80d8ff;
+    opacity: .9;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    box-shadow: 0 0.05rem 1rem rgb(0 0 0 / 15%) !important;
+    border-radius: 0 0 .5em .5em;
+    z-index: 100;
+}
+
+.logo {
+    flex: 0 0 30%;
+}
+
+.logo > h3 {
+    padding-left: 2em;
+}
+
+.navbar {
+    flex: 0 0 30%;
+    margin: 1.3rem 0 0 auto;
+    padding-right: 2em;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    margin: 0%;
+}
+
+.navigation > a {
+    position: relative;
+    flex: 1 1 25%;
+    text-align: center;
+    margin-left: 1em;
+}
+
+.navigation > a:first-child {
+    margin-left: 0;
+}
+
+.navigation > a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #3498db;
+    content: "";
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.navigation > a:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.navigation > a:hover {
+    cursor:pointer;
+}
+
+.temp-carousel {
+    /* margin-top: -5rem; */
+    height: 400px;
+    width: auto;
+    background: url("../images/photo-1567427018141-0584cfcbf1b8.jfif") center no-repeat;
+}
+
+
+.swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 10rem;
+
+}
+
+.event-container {
+    border: 3px solid #ddd;
+    border-radius: .7em;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin-top: 5rem;
+    box-shadow: none;
+    transition: box-shadow .2s ease-in;
+}
+
+.event-container:hover {
+    box-shadow: 0 0.05rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+.event {
+    position: relative;
+    display: flex;
+    padding-top: 4rem;
+}
+
+.event-container > h3 {
+    text-align: center;
+    border-bottom: 2px solid #dedede;
+    padding-bottom: 1em;
+}
+
+.event > * {
+    vertical-align: middle;
+}
+
+.totop {
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.totop > span {
+    background-color: #fff;
+    width: 3rem;
+    height: 2rem;
+    border-radius: .3px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    /* font: normal normal normal 14px/1 FontAwesome; */
+}
+
+.up::before {
+    content: "🤘";
+}
+
+.footer {
+    height: 5rem;
+    text-align: center;
+    position: relative;
+    background-color: #333;
+    border-radius: .5em .5em 0 0 ;
+    margin-top: 5rem;
+}
+
+.contact {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #dedede;
+}
