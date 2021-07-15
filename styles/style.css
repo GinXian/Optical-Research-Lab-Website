@@ -129,7 +129,7 @@ header {
 .event {
     position: relative;
     display: flex;
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
 }
 
 .event > p {
@@ -141,6 +141,7 @@ header {
     text-align: center;
     border-bottom: 2px solid #dedede;
     padding-bottom: 1em;
+    margin-bottom: 0;
 }
 
 .event > * {
