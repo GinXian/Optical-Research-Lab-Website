@@ -33,6 +33,7 @@ header {
 
 .logo > h3 {
     padding-left: 2em;
+    padding-top: 8px;
 }
 
 .navbar {
@@ -52,6 +53,9 @@ header {
     flex: 1 1 25%;
     text-align: center;
     margin-left: 1em;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
 }
 
 .navigation > a:first-child {
@@ -105,7 +109,7 @@ header {
 }
 
 .event-container {
-    border: 3px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: .7em;
     height: 450px;
     width: 100%;
@@ -182,4 +186,14 @@ header {
     width: 100%;
     text-align: center;
     color: #dedede;
+}
+
+.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: papayawhip;
+    height: 2px;
+    content: "";
 }
