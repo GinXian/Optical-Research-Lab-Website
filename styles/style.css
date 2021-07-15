@@ -199,3 +199,11 @@ header {
     height: 2px;
     content: "";
 }
+
+.up {
+    color: rgb(133, 133, 250);
+}
+
+.up:hover {
+    color: red;
+}
