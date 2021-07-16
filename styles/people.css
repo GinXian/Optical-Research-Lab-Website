@@ -41,6 +41,12 @@ li > a {
     border-color: #aaa;
 }
 
+#a-founder:hover,
+#a-doctorate:hover,
+#a-master:hover {
+    cursor: pointer;
+}
+
 ul > li:first-child > a {
     border-radius: .5em .5em 0 0;
 }
