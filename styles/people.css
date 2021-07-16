@@ -8,6 +8,8 @@ main {
     flex: 0 0 20%;
     height: fit-content;
     margin-top: 1rem;
+    position: sticky;
+    top: 6rem;
 }
 
 .sidebar > ul {
