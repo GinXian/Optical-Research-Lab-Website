@@ -179,7 +179,7 @@ header {
     margin-top: 5rem;
     width: 100%;
     left: 0;
-    top: calc(100% + 5rem);
+    top: calc(100% + 10rem);
     /* bottom: 0; */
 }
 

@@ -1,0 +1,56 @@
+main {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    flex: 0 0 20%;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+    height: fit-content;
+    margin-top: 1rem;
+}
+
+.sidebar > ul {
+    list-style: none;
+    text-align: left;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar > ul > li {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.people {
+    flex: 0 0 60%;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+}
+
+img{
+    transform: scale(.75, .75);
+    padding: .5rem;
+    border: 2px solid #aaa;
+    border-radius: .5em;
+    transition: border-color 0.1s ease-in;
+}
+
+img:hover {
+    border-color: rgb(133, 133, 250);
+}
+
+.people h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
