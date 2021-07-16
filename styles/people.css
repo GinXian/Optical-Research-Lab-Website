@@ -6,8 +6,6 @@ main {
 
 .sidebar {
     flex: 0 0 20%;
-    border: 1px solid #aaa;
-    border-radius: .5em;
     height: fit-content;
     margin-top: 1rem;
 }
@@ -24,10 +22,34 @@ main {
     padding: 1rem 2rem;
     border-bottom: 1px solid #ddd;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.sidebar li:hover {
-    background-color: rgb(133, 133, 250);
+li > a {
+    display: block;
+    height: 100%;
+    padding: 1em 2em;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 0;
+    border-style: solid;
+    border-color: #aaa;
+}
+
+ul > li:first-child > a {
+    border-radius: .5em .5em 0 0;
+}
+
+ul > li:last-child > a {
+    border-bottom-width: 1px;
+    border-radius: 0 0 .5em .5em;
+}
+
+.sidebar a:hover {
+    background-color: #80d8ff;
 }
 
 .inner {

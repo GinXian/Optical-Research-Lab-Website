@@ -208,3 +208,7 @@ header {
 .up:hover {
     color: red;
 }
+
+a {
+    text-decoration: none;
+}
