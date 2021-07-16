@@ -118,7 +118,7 @@ header {
     position: relative;
     margin-top: 5rem;
     box-shadow: none;
-    transition: box-shadow .2s ease-in;
+    transition: box-shadow .1s ease-in;
 }
 
 .event-container:hover {
