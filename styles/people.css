@@ -6,7 +6,7 @@ main {
 
 .sidebar {
     flex: 0 0 20%;
-    border: 1px solid #ddd;
+    border: 1px solid #aaa;
     border-radius: .5em;
     height: fit-content;
     margin-top: 1rem;
@@ -20,37 +20,66 @@ main {
     padding: 0;
 }
 
-.sidebar > ul > li {
+.sidebar li {
     padding: 1rem 2rem;
     border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.sidebar li:hover {
+    background-color: rgb(133, 133, 250);
+}
+
+.inner {
+    display: block;
+}
+
+.inner > img,
+.inner > .description {
+    float: left;
+}
+
+.description {
+    /* overflow: auto; */
+    width: 60%;
+    margin-right: 0;
+    margin-left: 5rem;
+}
+
+.description > h3 {
+    color: #08c;
+    letter-spacing: 3px;
+}
+
+.description > p {
+    line-height: 150%;
+    letter-spacing: 2px;
 }
 
 .people {
     flex: 0 0 60%;
-    margin-right: 0;
     margin-left: auto;
-    display: flex;
-    flex-direction: column;
+    margin-right: 0;
 }
 
-.person {
-    display: flex;
-}
-
-img{
-    transform: scale(.75, .75);
-    padding: .5rem;
-    border: 2px solid #aaa;
+img {
     border-radius: .5em;
-    transition: border-color 0.1s ease-in;
+    border: 2px solid #eee;
+    transition: border-color .1s ease-in;
+    padding: 2px;
 }
 
 img:hover {
-    border-color: rgb(133, 133, 250);
+    border-color: #08c;
 }
 
-.people h2 {
-    border-bottom: 1px solid #aaa;
+.people > #founder,
+.people > #doctorate,
+.people > #master {
+    margin-bottom: 4rem;
     padding-bottom: 2rem;
-    padding-left: 2rem;
+}
+
+hr {
+    border-width: 1px;
 }
