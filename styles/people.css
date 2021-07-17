@@ -56,7 +56,7 @@ ul > li:last-child > a {
     border-radius: 0 0 .5em .5em;
 }
 
-.sidebar a:hover {
+.sidebar a:not(.gotcha):hover {
     background-color: #eee;
     color: #444;
 }
