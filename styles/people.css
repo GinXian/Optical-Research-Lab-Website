@@ -29,9 +29,10 @@ main {
     border: 0;
 }
 
-li > a {
+li > button {
     display: block;
     height: 100%;
+    width: 100%;
     padding: 1em 2em;
     border-top-width: 1px;
     border-left-width: 1px;
@@ -39,6 +40,8 @@ li > a {
     border-bottom-width: 0;
     border-style: solid;
     border-color: #aaa;
+    font-size:medium;
+    background-color: #fff;
 }
 
 #a-founder:hover,
@@ -47,16 +50,16 @@ li > a {
     cursor: pointer;
 }
 
-ul > li:first-child > a {
+ul > li:first-child > button {
     border-radius: .5em .5em 0 0;
 }
 
-ul > li:last-child > a {
+ul > li:last-child > button {
     border-bottom-width: 1px;
     border-radius: 0 0 .5em .5em;
 }
 
-.sidebar a:not(.gotcha):hover {
+.sidebar button:not(.gotcha):hover {
     background-color: #eee;
     color: #444;
 }
