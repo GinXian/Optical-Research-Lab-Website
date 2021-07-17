@@ -45,9 +45,7 @@ function poll() {
             curr_active = i
             break
         }
-        if(i == 2) {
-            curr_active = -1
-        }
+        curr_active = (i == 2) ? -1 : curr_active;
     }
 }
 
