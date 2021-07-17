@@ -57,6 +57,12 @@ ul > li:last-child > a {
 }
 
 .sidebar a:hover {
+    background-color: #eee;
+    color: #444;
+}
+
+
+.gotcha {
     background-color: #80d8ff;
 }
 
