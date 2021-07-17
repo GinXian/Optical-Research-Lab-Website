@@ -10,7 +10,9 @@ var targets = [
     document.getElementById('master')
 ];
 
-for(let i = 0; i < 3; ++i) {
+var curr_active = 0;
+
+for(let i = 0, length = targets.length; i < length; ++i) {
     buttons[i].addEventListener(
         'click',
         function(i) {
@@ -23,3 +25,30 @@ for(let i = 0; i < 3; ++i) {
         }(i)
     )
 }
+
+function poll() {
+    // Remove attribute
+    if(curr_active >= 0) {
+        buttons[curr_active].classList.remove('gotcha')
+    }
+
+    let viewport_height = window.innerHeight;
+    let targets_to_viewport_top = [
+        targets[0].getBoundingClientRect().y,
+        targets[1].getBoundingClientRect().y,
+        targets[2].getBoundingClientRect().y,
+    ]
+    
+    for(let i = 0, length = buttons.length; i < length; ++i) {
+        if(targets_to_viewport_top[i] < viewport_height && targets_to_viewport_top[i] > 0) {
+            buttons[i].classList.add('gotcha')
+            curr_active = i
+            break
+        }
+        if(i == 2) {
+            curr_active = -1
+        }
+    }
+}
+
+window.addEventListener('scroll', poll)
