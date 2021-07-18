@@ -117,12 +117,13 @@ header {
 .event-container {
     border: 2px solid #ddd;
     border-radius: .7em;
-    height: 450px;
+    height: auto;
     width: 100%;
     position: relative;
     margin-top: 5rem;
     box-shadow: none;
     transition: box-shadow .1s ease-in;
+    
     
     background-color: #eff;
 }
@@ -135,6 +136,7 @@ header {
 .event {
     position: relative;
     display: flex;
+    margin-bottom: 3rem;
     /* padding-top: 4rem; */
 }
 
