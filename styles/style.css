@@ -123,6 +123,8 @@ header {
     margin-top: 5rem;
     box-shadow: none;
     transition: box-shadow .1s ease-in;
+    
+    background-color: #eff;
 }
 
 .event-container:hover {
@@ -139,6 +141,8 @@ header {
 .event > p {
     letter-spacing: 2px;
     line-height: 200%;
+    text-shadow: 1px 1px 5px #80d8ff;
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,0.3); */
 }
 
 .event-container > h3 {
