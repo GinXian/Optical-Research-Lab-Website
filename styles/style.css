@@ -145,6 +145,7 @@ header {
     line-height: 200%;
     text-shadow: 1px 1px 5px #80d8ff;
     /* text-shadow: 2px 2px 2px rgba(0,0,0,0.3); */
+    padding-top: 1.5rem;
 }
 
 .event-container > h3 {
