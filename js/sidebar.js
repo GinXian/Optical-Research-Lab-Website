@@ -26,21 +26,32 @@ for(let i = 0, length = targets.length; i < length; ++i) {
     )
 }
 
+
+function inBound(target) {
+    let style = window.getComputedStyle(target)
+    let rect = target.getBoundingClientRect()
+    let extra_bottom = parseInt(style.paddingBottom)
+                     + parseInt(style.marginBottom)
+
+    return (rect.top < 0 && rect.bottom - extra_bottom > 0) 
+        || (rect.top >= 0 && rect.top < window.innerHeight)
+
+}
+
 function poll() {
     // Remove attribute
     if(curr_active >= 0) {
         buttons[curr_active].classList.remove('gotcha')
     }
 
-    let viewport_height = window.innerHeight;
-    let targets_to_viewport_top = [
-        targets[0].getBoundingClientRect().y,
-        targets[1].getBoundingClientRect().y,
-        targets[2].getBoundingClientRect().y,
-    ]
+    // let targets_to_viewport_top = [
+    //     targets[0].getBoundingClientRect(),
+    //     targets[1].getBoundingClientRect(),
+    //     targets[2].getBoundingClientRect(),
+    // ]
     
     for(let i = 0, length = buttons.length; i < length; ++i) {
-        if(targets_to_viewport_top[i] < viewport_height && targets_to_viewport_top[i] > 0) {
+        if(inBound(targets[i])) {
             buttons[i].classList.add('gotcha')
             curr_active = i
             break
